@@ -31,11 +31,15 @@
   <% end %>
 
   <br />
-
-  <% @place.photos.each do |photo| %>
-    <%= image_tag photo.picture.url %>
-    <%= photo.caption %>
-  <% end %>
+  <div class="row">
+    <% @place.photos.each do |photo| %>
+      <div class="caption">
+        <%= image_tag photo.picture.url %>
+        <div class="clear"></div>
+        <%= photo.caption %>
+      </div>
+    <% end %>
+  </div>
 
   <br />
 
@@ -51,7 +55,7 @@
 </div>
 
 <div class="clear"></div>
-
+<br />
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">

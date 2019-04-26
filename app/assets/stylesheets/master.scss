@@ -125,3 +125,27 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+.caption img {
+  max-width: 100%;
+  height: auto;
+  border: 8px solid #eeeeee;
+  border-radius: 30px;  
+}
+
+.caption {
+  font-size: large;
+  text-align: center;
+}
+
+/*.figure {
+  float: right;
+  width: 30%;
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+  border: 8px solid #eeeeee;
+  border-radius: 30px;
+  margin: 0.5em;
+  padding: 0.5em;
+}*/
